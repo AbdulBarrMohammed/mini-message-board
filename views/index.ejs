@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 
 </head>
 <body>
@@ -18,12 +18,12 @@
         <% messages.map((message, index) => { %>
           <div class="user">
             <div class="left-user">
-              <p><%= message.user %></p>
+              <p><%= message.name %></p>
               <p><%= message.text %></p>
               <p><%= message.added.toLocaleDateString('en-US') %></p>
             </div>
             <div class="right-user">
-              <button><a href="/message/<%= index %>">Open</a></button>
+              <button><a href="/message/<%= index + 1 %>">Open</a></button>
             </div>
 
           </div>

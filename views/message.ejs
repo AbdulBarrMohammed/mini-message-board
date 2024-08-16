@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Message Details</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <p>Title:  <%= title %></p>
     <p>This is the message: <%= message.text %></p>
-    <p>This is the name: <%= message.user %></p>
+    <p>This is the name: <%= message.name %></p>
     <p>This is the date: <%= message.added %></p>
 </body>
 </html>
